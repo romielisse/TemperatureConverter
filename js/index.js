@@ -1,5 +1,5 @@
 
-var cel, fah, img_src;
+var cel, fah;
 
 // Convert to Celsius
 function toCelsius(fahrenheit) {
@@ -8,6 +8,9 @@ function toCelsius(fahrenheit) {
 	 
 	 if(cel.value < 0){
 		 document.getElementById("picture").src = "img/snowman.png";
+	 }
+	 else {
+		 document.getElementById("picture").src = "img/sun.gif";
 	 }
 }
 
@@ -18,6 +21,9 @@ function toFahrenheit(celcius) {
 	
 	if(fah.value < 32){
 		document.getElementById("picture").src = "img/snowman.png";
+	}
+	else {
+		 document.getElementById("picture").src = "img/sun.gif";
 	}
 }
   
